@@ -1,5 +1,5 @@
 {
-  "name": "fe-docker_utils",
+  "name": "@nanbratan/fe-docker_utils",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -50,5 +50,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanbratan/fe-docker-utils.git"
+  },
+  "author": "nanbratan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nanbratan/fe-docker-utils/issues"
+  },
+  "homepage": "https://github.com/nanbratan/fe-docker-utils#readme"
 }
