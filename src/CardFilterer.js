@@ -68,7 +68,7 @@ export default class CardFilterer {
 
         if (query.length >= 3) {
             this.filteredCards = cardsMatchingSearch
-                .map(card => searchFields.reduce((baseCard, searchField) => highlightCard(
+                .map((card) => searchFields.reduce((baseCard, searchField) => highlightCard(
                     baseCard,
                     searchField,
                     query,
@@ -124,6 +124,7 @@ export default class CardFilterer {
         this.filteredCards = filterCardsByDateRange(this.filteredCards);
         return this;
     }
+
     /**
      * If a bookmark only collection is authored, this method will constrain result set to only
      * cards that were saved.
@@ -137,7 +138,7 @@ export default class CardFilterer {
     keepBookmarkedCardsOnly(onlyShowBookmarks, bookmarkedCardIds, showBookmarks) {
         if (onlyShowBookmarks || showBookmarks) {
             this.filteredCards = this.filteredCards
-                .filter(card => bookmarkedCardIds.includes(card.id));
+                .filter((card) => bookmarkedCardIds.includes(card.id));
         }
         return this;
     }
